@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SistemaComponent } from './sistema.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SistemaRoutes } from './sistema.routing';
+import { FormVehiculosComponent } from './form-vehiculos/form-vehiculos.component'
 
 @NgModule({
   imports: [
@@ -10,6 +11,8 @@ import { SistemaRoutes } from './sistema.routing';
   ],
   declarations: [
     SistemaComponent,
-    DashboardComponent]
+    DashboardComponent,
+    FormVehiculosComponent
+  ]
 })
 export class SistemaModule { }

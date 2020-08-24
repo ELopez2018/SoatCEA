@@ -8,8 +8,8 @@ import { appConstants } from '../../global/constants/index';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  btnSave = appConstants.BUTTON_SAVE;
-  btnDelete = appConstants.BUTTON_DELETE;
+
+  btnAcept = appConstants.BUTON_ACEPT;
   btnCancel = appConstants.BUTTON_CANCEL;
   constructor() { }
 
