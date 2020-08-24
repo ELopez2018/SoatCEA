@@ -8,6 +8,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { SistemaComponent } from './components/sistema/sistema.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
