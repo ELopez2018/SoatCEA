@@ -8,7 +8,7 @@ import { StoreModule } from '@ngrx/store';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { SistemaComponent } from './components/sistema/sistema.component';
+
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -16,7 +16,6 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    SistemaComponent
   ],
   imports: [
     BrowserModule,

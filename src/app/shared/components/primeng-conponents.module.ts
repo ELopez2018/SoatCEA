@@ -4,7 +4,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
-import { MenuItem } from 'primeng/api';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [],
@@ -12,7 +12,9 @@ import { MenuItem } from 'primeng/api';
     InputTextModule,
     CardModule,
     ButtonModule,
-    MenubarModule],
+    MenubarModule,
+    MenuModule
+  ],
   exports: [
     InputTextModule,
     CardModule,

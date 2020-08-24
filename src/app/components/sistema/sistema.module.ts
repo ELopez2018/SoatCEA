@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SistemaComponent } from './sistema/sistema.component';
+import { SistemaComponent } from './sistema.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SistemaRoutes } from './sistema.routing';
 
 @NgModule({
   imports: [
-    CommonModule
+    SistemaRoutes
   ],
-  declarations: [SistemaComponent]
+  declarations: [
+    SistemaComponent,
+    DashboardComponent]
 })
 export class SistemaModule { }
