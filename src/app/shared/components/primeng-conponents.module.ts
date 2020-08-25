@@ -7,8 +7,10 @@ import { MenuModule } from 'primeng/menu';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { TieredMenuModule } from 'primeng/tieredmenu';
-import { SearchPlacaComponent } from './search-placa/search-placa.component';
-import { StatusbarComponent } from './statusbar/statusbar.component';
+import { GalleriaModule} from 'primeng/galleria';
+
+
+
 
 @NgModule({
   declarations: [],
@@ -20,7 +22,8 @@ import { StatusbarComponent } from './statusbar/statusbar.component';
     MenuModule,
     InputTextareaModule,
     DropdownModule,
-    TieredMenuModule
+    TieredMenuModule,
+    GalleriaModule
   ],
   exports: [
     InputTextModule,
@@ -30,7 +33,8 @@ import { StatusbarComponent } from './statusbar/statusbar.component';
     MenuModule,
     InputTextareaModule,
     DropdownModule,
-    TieredMenuModule
+    TieredMenuModule,
+    GalleriaModule
   ],
 })
 export class PrimengConponentsModule { }
