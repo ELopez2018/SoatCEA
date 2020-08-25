@@ -4,16 +4,6 @@ import { ResponsePlacaModel } from '../../../models/response-placa.model';
 
 
 
-export const currentSearchPlaca = createAction(
-  '[SearchPlaca] Current Search-Placa',
-  props<{ responsePlacaModel: ResponsePlacaModel }>()
-);
-
-export const selectSearchPlaca = createAction(
-  '[SearchPlaca] Select Search-Placa',
-  props<{ responsePlacaModel: ResponsePlacaModel }>()
-);
-
 export const searchSearchPlaca = createAction(
   '[SearchPlaca] Search Search-Placa',
   props<{ action: ApiActionModel<ResponsePlacaModel> }>()

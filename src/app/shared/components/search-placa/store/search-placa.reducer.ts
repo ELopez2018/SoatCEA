@@ -15,46 +15,25 @@ export const initialState: State = {
   loading: false,
   message: null,
   responsePlacaModel: null
-}
+};
 
-const configurationReducer = createReducer(
-  // ||=====================[ Time Unit ]=====================||
-    // =====[ SEARCH ]
+const searchPlacaReducer = createReducer(
+  initialState,
   on(SearchPlacaActions.searchSearchPlaca, (state) => ({ ...state, error: null, loading: true })),
-  on(SearchPlacaActions.searchSearchPlacaSuccess, (state, { responsePlacaModel }) => ({ ...state, loading: false, responsePlacaModel })),
-
-  // =====[ CREATE ]
-  on(TimeUnitActions.createTimeUnit, (state) => updateFlags(state)),
-  on(TimeUnitActions.createTimeUnitSuccess, (state, { timeUnit }) => ({
+  on(SearchPlacaActions.searchSearchPlacaSuccess, (state, { responsePlacaModel }) => ({ ...state, loading: false, responsePlacaModel }))
+);
+const updateFlags = (state: State): State => {
+  return {
     ...state,
-    loading: false,
-    message: "El registro fué creado correctamente...",
-    timeUnitAll: [...state.timeUnitAll, timeUnit]
-  })),
-
-  // =====[ UPDATE ]
-  on(TimeUnitActions.updateTimeUnit, (state) => updateFlags(state)),
-  on(TimeUnitActions.updateTimeUnitSuccess, (state, { timeUnit }) => {
-    const filter = state.timeUnitAll.filter(item => item.RowKey !== timeUnit.RowKey);
-    return {
-      ...state,
-      loading: false,
-      message: "El registro fué actualizado correctamente...",
-      timeUnitAll: [...filter, timeUnit],
-      timeUnit: null
-    }
-  }),
-  // =====[ DELETE ]
-  on(TimeUnitActions.deleteTimeUnit, (state) => updateFlags(state)),
-  on(TimeUnitActions.deleteTimeUnitSuccess, (state, { timeUnit }) => {
-    const timeUnitAll = state.timeUnitAll.filter(x => !(x.PartitionKey === timeUnit.PartitionKey && x.RowKey === timeUnit.RowKey))
-    return {
-      ...state,
-      loading: false,
-      message: "El registro fué eliminado correctamente...",
-      error: null,
-      timeUnitAll
-    };
-  }),
-
-)
+    error: null,
+    loading: true,
+    message: null
+  };
+};
+export function reducer(state: State | undefined, action: Action) {
+  return searchPlacaReducer(state, action);
+}
+export const getError = (state: State) => state.error;
+export const getLoading = (state: State) => state.loading;
+export const getMessageAction = (state: State) => state.message;
+export const getSearchPlaca = (state: State) => state.responsePlacaModel;
