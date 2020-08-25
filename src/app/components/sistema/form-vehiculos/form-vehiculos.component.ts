@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { appConstants } from 'src/app/global/constants';
+
 
 @Component({
   selector: 'app-form-vehiculos',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormVehiculosComponent implements OnInit {
 
+  btnContinuar = appConstants.BUTON_ACEPT ;
+  btnRegresar = appConstants.BUTTON_CANCEL;
   constructor() { }
 
   ngOnInit(): void {

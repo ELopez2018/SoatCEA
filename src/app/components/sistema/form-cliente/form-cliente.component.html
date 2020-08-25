@@ -1,0 +1,116 @@
+<div class="p-d-flex p-jc-center">
+
+  <div class="p-col-12 p-md-6 p-shadow-5 p-inline p-mt-5 p-fluid p-formgrid p-grid p-p-2">
+    <div class="p-col-12 p-md-10 p-jc-cente">
+      <img src="../../../../assets/img/Logos/Logo64X64.png" alt="logo">
+      <span id="titleNombre"> C.E.A. Seguros Colombia </span>
+      <h3 class="text-center">DATOS DEL CLIENTE</h3>
+      <div class="p-fluid p-formgrid p-grid p-p-1">
+
+        <div class=" p-col-12 p-md-6">
+          <label for="Descripcion">Tipo Documento</label>
+
+          <p-dropdown id="tipodocSelect" inputId="state" [options]="cities" placeholder="Select" optionLabel="name"></p-dropdown>
+          <!-- <input type="text" id="Descripcion" pInputText class="Altura30" /> -->
+
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Modelo">DNI</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon "><em class="pi pi-id-card"></em></span>
+            <input type="text" id="Modelo" pInputText  />
+          </div>
+        </div>
+
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Descripcion">Primer Nombre</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-user-edit"></i></span>
+            <input type="text" id="Descripcion" pInputText class="Altura30" />
+          </div>
+
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Modelo">Segundo Nombre</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-user-edit"></i></span>
+            <input type="text" id="Modelo" pInputText class="Altura30" />
+          </div>
+
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Placa">Primer Apellido</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-user-edit"></i></span>
+            <input type="text" id="Placa" pInputText class="Altura30" />
+          </div>
+
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Serie">Segundo Apellido</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-user-edit"></i></span>
+            <input type="text" id="Placa" pInputText class="Altura30" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="departamento">Departamento</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-globe"></i></span>
+            <input type="text" id="departamento" pInputText class="Altura30" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="ciudad">Ciudad</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><i class="pi pi-directions"></i></span>
+            <input type="text" id="ciudad" pInputText class="Altura30" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="tipoDireccion">Tipo Direccion</label>
+
+          <p-menu #menu [popup]="true" [model]="items"  ></p-menu>
+          <div class="p-inputgroup">
+
+            <button class="p-inputgroup-addon Altura30" #btn type="button" pButton icon="pi pi-fw pi-list" label="" (click)="menu.toggle($event)"></button>
+            <input type="text" id="tipoDireccion" pInputText class="Altura30" disabled (ngValue)="value8" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="direccion">Direccion</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><em class="pi pi-home"></em></span>
+            <input type="text" id="direccion" pInputText class="Altura30" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="email">Correo Electrónico</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><em class="pi pi-envelope"></em></span>
+            <input type="text" id="email" pInputText class="Altura30" />
+          </div>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="Peso">Celular</label>
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon Altura30"><em class="pi pi-mobile"></em></span>
+            <input type="text" id="Placa" pInputText class="Altura30" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-col-12 p-md-2 p-shadow-3">
+      <div class="p-field p-col-12 p-md-12 text-center">
+        <label> $320.750,00</label>
+        <label> RUNT: $1.700 </label>
+      </div>
+    </div>
+    <div class="p-col-6 p-mt-3">
+      <button pButton type="button" [class]="btnRegresar" label="Regresar"></button>
+    </div>
+    <div class="p-col-6 p-mt-3">
+      <button pButton type="button" [class]="btnContinuar" label="Continuar"></button>
+    </div>
+  </div>
+</div>

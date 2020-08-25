@@ -4,6 +4,10 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuModule } from 'primeng/menu';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { DropdownModule } from 'primeng/dropdown';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+import { SearchPlacaComponent } from './search-placa/search-placa.component';
 
 @NgModule({
   declarations: [],
@@ -12,13 +16,20 @@ import { MenuModule } from 'primeng/menu';
     CardModule,
     ButtonModule,
     MenubarModule,
-    MenuModule
+    MenuModule,
+    InputTextareaModule,
+    DropdownModule,
+    TieredMenuModule
   ],
   exports: [
     InputTextModule,
     CardModule,
     ButtonModule,
-    MenubarModule
+    MenubarModule,
+    MenuModule,
+    InputTextareaModule,
+    DropdownModule,
+    TieredMenuModule
   ],
 })
 export class PrimengConponentsModule { }

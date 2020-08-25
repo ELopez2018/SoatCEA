@@ -9,7 +9,10 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 
+
+
 import { SharedModule } from './shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     StoreModule.forRoot({}, {}),
     SweetAlert2Module.forRoot(),
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
