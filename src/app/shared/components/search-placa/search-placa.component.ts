@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { appConstants } from 'src/app/global/constants';
 
 @Component({
   selector: 'app-search-placa',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-placa.component.scss']
 })
 export class SearchPlacaComponent implements OnInit {
-
+  btnContinuar = appConstants.BUTON_ACEPT;
   constructor() { }
 
   ngOnInit(): void {
