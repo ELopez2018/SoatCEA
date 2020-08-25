@@ -8,9 +8,10 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { SearchPlacaComponent } from './search-placa/search-placa.component';
+import { StatusbarComponent } from './statusbar/statusbar.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [StatusbarComponent],
   imports: [
     InputTextModule,
     CardModule,

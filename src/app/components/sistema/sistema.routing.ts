@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: '',
     component: SistemaComponent,
     children: [
-      { path: '', redirectTo: 'cliente', pathMatch: 'full' },
+      { path: '', redirectTo: 'principal', pathMatch: 'full' },
       { path: 'principal', component: DashboardComponent },
       { path: 'vehiculos', component: FormVehiculosComponent },
       { path: 'cliente', component: FormClienteComponent },
