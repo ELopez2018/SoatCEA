@@ -11,7 +11,7 @@ import { SearchPlacaComponent } from './search-placa/search-placa.component';
 import { StatusbarComponent } from './statusbar/statusbar.component';
 
 @NgModule({
-  declarations: [StatusbarComponent],
+  declarations: [],
   imports: [
     InputTextModule,
     CardModule,
