@@ -7,9 +7,9 @@ import { MenuModule } from 'primeng/menu';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { TieredMenuModule } from 'primeng/tieredmenu';
-import { GalleriaModule} from 'primeng/galleria';
-
-
+import { GalleriaModule } from 'primeng/galleria';
+import { DialogModule } from 'primeng/dialog';
+import { ConfirmDialogModule} from 'primeng/confirmdialog';
 
 
 @NgModule({
@@ -23,7 +23,9 @@ import { GalleriaModule} from 'primeng/galleria';
     InputTextareaModule,
     DropdownModule,
     TieredMenuModule,
-    GalleriaModule
+    GalleriaModule,
+    DialogModule,
+    ConfirmDialogModule
   ],
   exports: [
     InputTextModule,
@@ -34,7 +36,9 @@ import { GalleriaModule} from 'primeng/galleria';
     InputTextareaModule,
     DropdownModule,
     TieredMenuModule,
-    GalleriaModule
+    GalleriaModule,
+    DialogModule,
+    ConfirmDialogModule
   ],
 })
 export class PrimengConponentsModule { }

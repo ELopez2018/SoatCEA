@@ -1,10 +1,10 @@
-<div class="p-d-flex p-jc-center">
+<div class="p-d-flex p-jc-center "  *ngIf="!continuarBool">
 
-  <div class="p-col-12 p-md-6 p-shadow-5 p-inline p-mt-5 p-fluid p-formgrid p-grid p-p-2">
+  <div class="p-col-12 p-md-12 p-shadow-5 p-inline  p-fluid p-formgrid p-grid ">
     <div class="p-col-12 p-md-10 p-jc-cente">
-      <img src="../../../../assets/img/Logos/Logo64X64.png" alt="logo">
+      <img [src]="imgLogo" alt="logo" >
       <span id="titleNombre"> C.E.A. Seguros Colombia </span>
-      <h3 class="text-center">DATOS DEL CLIENTE</h3>
+      <h4 class="text-center">DATOS DEL CLIENTE</h4>
       <div class="p-fluid p-formgrid p-grid p-p-1">
 
         <div class=" p-col-12 p-md-6">
@@ -106,11 +106,13 @@
         <label> RUNT: $1.700 </label>
       </div>
     </div>
-    <div class="p-col-6 p-mt-3">
-      <button pButton type="button" [class]="btnRegresar" label="Regresar"></button>
+    <div class="p-col-12 p-md-6 p-mt-3">
+      <button (click)="cancel()" pButton type="button" [class]="btnRegresar" label="Regresar"></button>
     </div>
-    <div class="p-col-6 p-mt-3">
-      <button pButton type="button" [class]="btnContinuar" label="Continuar"></button>
+    <div class="p-col-12  p-md-6 p-mt-3">
+      <button (click)="continuar()" pButton type="button" [class]="btnContinuar" label="Continuar"></button>
     </div>
   </div>
 </div>
+
+<app-form-vehiculos *ngIf="continuarBool"></app-form-vehiculos>

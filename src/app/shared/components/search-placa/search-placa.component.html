@@ -1,10 +1,10 @@
 <div class="p-d-flex p-jc-center">
 
-  <div class="p-col-12 p-md-3 p-shadow-5 p-inline  p-jc-center p-mt-5 p-fluid p-formgrid p-grid p-p-2">
-    <div class="p-col-12 p-md-10 p-jc-center">
+  <div class="p-col-12 p-md-3 p-shadow-5 p-inline  p-jc-center p-mt-5 p-fluid p-formgrid p-grid p-p-1">
+    <div class="p-col-12 p-md-10 p-jc-center p-mb-5">
       <img src="../../../../assets/img/Logos/Logo64X64.png" alt="logo">
       <span id="titleNombre"> C.E.A. Seguros Colombia </span>
-      <h3 class="text-center">COTIZE SU SOAT</h3>
+      <h3 class="text-center">COTICE SU SOAT</h3>
       <div class="p-fluid p-formgrid p-grid p-pt-3">
         <div class="p-field p-col-12 p-md-12 text-center">
 
@@ -31,7 +31,12 @@
         </div>
       </div>
       <div class="p-col-12">
-        <button pButton type="button" [class]="btnContinuar" label="Cotizar"></button>
+        <button (click)="display=true" pButton type="button" [class]="btnContinuar" label="Cotizar"></button>
       </div>
     </div>
   </div>
+
+  <p-dialog  position="top"  [style]="opciones"   [showHeader]="false" [modal]="true" [(visible)]="display"  [keepInViewport]="false" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+    <app-form-cliente (display)=" display=$event " ></app-form-cliente>
+</p-dialog>
+

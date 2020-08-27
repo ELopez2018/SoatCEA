@@ -1,0 +1,20 @@
+#titleNombre {
+  font-weight: bolder;
+  color:#27366d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+// .p-dialog-content {
+//   width: 80%;
+// }
+.mydialog {
+  width: 50vw;
+}
+@media screen and (max-width: 40em) {
+  // .mydialog {
+  //     width: 10vw;
+  // }
+  // .p-dialog-content {
+  //   width: 100%;
+  // }
+}

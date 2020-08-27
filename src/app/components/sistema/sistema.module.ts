@@ -17,8 +17,9 @@ import { SharedModule } from '../../shared/shared.module';
   declarations: [
     SistemaComponent,
     DashboardComponent,
-    FormVehiculosComponent,
-    FormClienteComponent
+  ],
+  exports: [
+
   ]
 })
 export class SistemaModule { }

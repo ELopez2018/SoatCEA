@@ -8,7 +8,7 @@ import { appConstants } from 'src/app/global/constants';
   styleUrls: ['./form-vehiculos.component.scss']
 })
 export class FormVehiculosComponent implements OnInit {
-
+  imgLogo = appConstants.LOGO_48X48;
   btnContinuar = appConstants.BUTON_ACEPT ;
   btnRegresar = appConstants.BUTTON_CANCEL;
   constructor() { }
