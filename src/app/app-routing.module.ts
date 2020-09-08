@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'sistema',  loadChildren: () => import('./components/sistema/sistema.module').then(m => m.SistemaModule) },
-  { path: "**", redirectTo: "home" }
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
